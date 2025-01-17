@@ -15,14 +15,14 @@ console.log(quotient);
 
 
 //Greeting with variables
-    let name = "Carol";
+    let first1name = "Carol";
     let age = 30;
     let city = "New York";
     let job = "Web Developer";
     let hobby = "painting";
 
 //printing the greeting
-console.log(`Hello, my name is ${name}. I am ${age} years old and I live in ${city}. I work as a ${job} and I love ${hobby}.`);
+console.log(`Hello, my name is ${first1name}. I am ${age} years old and I live in ${city}. I work as a ${job} and I love ${hobby}.`);
 
 //String concatenation
     let firstName = "John";
@@ -57,7 +57,7 @@ console.log(`The area of the rectangle is ${rectangleArea}.`);
 //Calculating the area of a circle
     let radius = 10;
     let pi = 3.14;
-    let circleArea = pi * radius * radius;
+    let circleArea = pi * radius^2;
 //printing the area
 console.log(`The area of the circle is ${circleArea}.`);
 
