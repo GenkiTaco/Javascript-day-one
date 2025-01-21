@@ -62,3 +62,74 @@ if (driveAge >= 16 && hasLicense){
     console.log("You can drive!");
 } else { console.log("You need a license to drive.");
 }
+
+// 6. Logical Operators Practice
+let isWeekend = true;
+let isHoliday = false;
+if (isWeekend || isHoliday) {
+    console.log("You can relax today!");
+} else {
+    console.log("It is a work day.");
+}
+
+// 7. Function: Greeting
+//Write a function greet(name) that takes a name as a parameter and logs a personalized greeting:
+//"Hello, <name>! Welcome to JavaScript class."
+let name = "Kate";
+function greet(name) {
+    console.log("Hello, " + name + "! Welcome to JavaScript class.");
+}
+// 8. Function: Square a Number
+//Write a function square(number) that returns the square of the given number.
+//Use the function to calculate and log the square of 5, 7, and 10.
+function square(number) {
+    return number * number;     
+}
+console.log (square(5)); //25
+console.log (square(7)); //49
+console.log (square(10)); //100
+
+// 9. Function with Default Parameters
+//Write a function calculateDiscount(price, discountRate = 0.1) that:
+//Calculates the discount on a given price.
+//Logs "Discount: $<discount>" and "Final Price: $<finalPrice>".
+//Call the function with:
+// price = 100 and no discount rate (use default). 
+// price = 200 and discountRate = 0.2.
+function calculateDiscount(price, discountRate = 0.1) {
+    let discount = price * discountRate;
+    let finalPrice = price - discount;
+    console.log("Discount: $" + discount);
+    console.log("Final Price: $" + finalPrice);
+}
+let price1 = 100;
+let price2 = 200;
+calculateDiscount(price1);
+calculateDiscount(price2, 0.2);
+
+// 10. Tax and Discount Calculator
+// Write a function calculateFinalPrice(price, discountRate = 0.15, taxRate = 0.08) that:
+// Calculates the discounted price.
+// Adds tax to the discounted price.
+// Logs:
+// "Original Price: $<price>"
+// "Discount: $<discount>"
+// "Tax: $<tax>"
+// "Final Price: $<finalPrice>"
+// Call the function with:
+// price = 100 (use default)
+// price = 250, discountRate = 0.2, and taxRate = 0.1.
+function calculateFinalPrice(price, discountRate = 0.15, taxRate = 0.08) { 
+    let discount = price * discountRate;
+    let discountedPrice = price - discount;
+    let tax = discountedPrice * taxRate;
+    let finalPrice = discountedPrice + tax;
+    console.log("Original Price: $" + price);
+    console.log("Discount: $" + discount);
+    console.log("Tax: $" + tax);
+    console.log("Final Price: $" + finalPrice);
+}
+let price3 = 100;
+let price4 = 250;
+calculateFinalPrice(price3);
+calculateFinalPrice(price4, 0.2, 0.1);
