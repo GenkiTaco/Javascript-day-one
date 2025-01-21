@@ -1,0 +1,64 @@
+// 1. Truthy and Falsy Check
+//Write a script to check if a value is truthy or falsy. 
+// Use the following values: 0,"" (empty string),"Hello",42,null,Log "Truthy" or "Falsy" for each value
+function Boolean(value) {
+    if (value) {
+        console.log ("Truthy");
+    } else { 
+        console.log ("Falsy");}
+    }
+log.console(Boolean(0));  //Falsy
+log.console(Boolean(""));  //Falsy
+log.console(Boolean("Hello"));  //Truthy
+log.console(Boolean(42));  //Truthy
+log.console(Boolean(null));  //Falsy
+
+//2. Age Eligibility
+//Write a script to check if a user is eligible to vote based on their age.
+// If the user is 18 or older, log "You are eligible to vote."
+// Otherwise, log "You are not old enough to vote."
+let age = 19;
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+} else {
+    console.log("You are not old enough to vote.");
+}
+
+//3. Calculate final Price
+//Write a script to calculate the final price of an item after a 20% discount and an 8% tax.
+// Use the following:
+// Initial price: $150
+// Discount rate: 20%
+// Tax rate: 8%
+// Expected output: $124.20
+let initialPrice = 150;
+let discountRate = 0.20;
+let taxxRate = 0.08;
+let discount = initialPrice * discountRate;
+let finalPrice = (initialPrice - discount)*taxxRate;
+console.log("Original pricce: S<initalPrice>");
+console.log("Discount: $<discount>");
+console.log("Tax: $<tax>")
+console.log("Final Price: $<finalPrice>")
+
+// 4. Nested If Statements for Login
+// Write a script to simulate a login system.
+let username= "admin";
+let password= "password123";
+if (username === "admin") {
+    if (password === "password123") {
+        console.log("Access granted!");
+    } else {
+        console.log("Incorrect password");
+    }
+} else { 
+    console.log("Unknown User");
+}
+// 5. Driving Eligibility
+// Wrtie a script to check if a person is eligible to drive.
+let driveAge = 20;
+let hasLicense = true;
+if (driveAge >= 16 && hasLicense){
+    console.log("You can drive!");
+} else { console.log("You need a license to drive.");
+}
