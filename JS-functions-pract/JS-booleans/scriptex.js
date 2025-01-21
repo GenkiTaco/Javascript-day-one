@@ -7,11 +7,10 @@ function Boolean(value) {
     } else { 
         console.log ("Falsy");}
     }
-log.console(Boolean(0));  //Falsy
-log.console(Boolean(""));  //Falsy
-log.console(Boolean("Hello"));  //Truthy
-log.console(Boolean(42));  //Truthy
-log.console(Boolean(null));  //Falsy
+ console.log(Boolean(0));  //Falsy
+ console.log(Boolean(""));  //Falsy
+ console.log(Boolean("Hello"));  //Truthy
+ console.log(Boolean(42));  //Truthy
 
 //2. Age Eligibility
 //Write a script to check if a user is eligible to vote based on their age.
